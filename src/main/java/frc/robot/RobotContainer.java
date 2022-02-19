@@ -46,6 +46,6 @@ public class RobotContainer {
 
     Robot.state.put("RPM", RobotContainer.fx.getVelocity());
     Robot.state.put("Pos", RobotContainer.fx.getPosition());
-    System.out.println(Robot.state);
+    // System.out.println(Robot.state);
   }
 }
