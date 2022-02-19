@@ -41,4 +41,11 @@ public class RobotContainer {
    * edu.wpi.first.wpilibj2.command.button.JoystickButton}.
    */
   private void configureButtonBindings() {}
+
+  public void getRobotState() {
+
+    Robot.state.put("RPM", RobotContainer.fx.getVelocity());
+    Robot.state.put("Pos", RobotContainer.fx.getPosition());
+    System.out.println(Robot.state);
+  }
 }
